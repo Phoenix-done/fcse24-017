@@ -163,21 +163,16 @@ FAqs*/
 .main-bg2 {
     background-image: url("Images/homie.png"); 
     background-size: cover;
-    background-position: center;
-    min-height: 100vh; 
-    width: 100%;
-    padding: 2em;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
+
 }
 
-.text-postion2 {
+.text-postion-homie {
 
     text-align: justify;
     color: #ffffff;
     font-size: 1.5em;
     padding: 7em;
-    
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 /* my Products page */
@@ -267,9 +262,54 @@ FAqs*/
 
 
 
-    /* For adapting to screen size */
+
+
+
+
+
+
+
+
+
+
+    /* For adapting to screen size 😶 */
     @media (max-width: 600px) 
+
+    
     {
+
+        /* nav stuff */
+         .header {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            
+        }
+        nav {
+            flex-direction: column;
+            gap: 0.8em;
+            width: 100%;
+            align-items: flex-start;
+            padding: 0.5em 1em;
+        }
+        nav a {
+            width: 100%;
+            padding: 0.7em 0.5em;
+            font-size: 1em;
+            
+        }
+
+        /* Home  fixing stuff*/
+
+       .main-bg2 {
+        padding: 0.1em 0.1em;
+        }
+        
+        .text-postion-homie {
+            font-size: 1em;
+            margin: 1em 0.2em;
+        }
+        
         .contactt {
             padding: 1em 1em 0em 1em;
             font-size: 1em;
@@ -277,15 +317,10 @@ FAqs*/
         .main-content {
             padding: 1em 0.5em 1em 0.5em;
         }
-        .box {
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-        form {
-            width: 100%;
-        }
-        .form-control, textarea, input[type="text"], input[type="tel"] {
+        
+        /*for the forms, so its Feedback */
+      
+        .form-control, textarea, input[type="text"], input[type="tel"] { /* For tageting elements, text box and tel also */
             width: 100%;
             min-width: 0;
             box-sizing: border-box;
@@ -297,37 +332,43 @@ FAqs*/
             font-size: 1.1em;
             padding: 0.7em;
         }
-        label {
-            font-size: 1em;
+       
+    
+            /*Products page */
+
+       
+        .main-bg {
+        padding: 1em 0.5em;
+        min-height: 100vh; /* making sure its fine on veiwport */
+        width: 100%;
+        background-size: cover;
+        background-position: center;
         }
+        .text-postion {
+            margin: 0; /* it fixes small screen issue */
+            padding: 0.5em;
+            font-size: 1.1em;
+            color: #111;
+            font-family: 'Dancing Script', cursive;
+        }
+        h1, #h1 {
+            font-size: 1.2em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            
+        }
+
+        /*FAQs fixing */
+        .accordion {
+        padding: 1em 0.5em 2em 0.5em;
+    }
+    .accordion-header,
+    .accordion-body {
+        font-size: 1em;
+       
+    }
     
 
+}
 
-        .header {
-            flex-direction: column;
-            align-items: flex-start;
-            height: auto;
-            padding: 0.5em 0;
-        }
-        nav {
-            flex-direction: column;
-            gap: 0.5em;
-            width: 100%;
-            align-items: flex-start;
-            padding: 0.5em 1em;
-        }
-        nav a {
-            width: 100%;
-            padding: 0.7em 0.5em;
-            font-size: 1em;
-            border-radius: 0.3em;
-            margin: 0;
-            transition: background 0.2s, color 0.2s;
-        }
-        nav a:hover {
-            font-size: 1em;
-            background: #222;
-            color: #fff;
-        }
-
-    }   
+    
