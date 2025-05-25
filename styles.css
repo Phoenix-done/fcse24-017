@@ -82,10 +82,10 @@ input:focus, textarea:focus {
 /* About us */
 
 .main-bg {
-    background-image: url("Images/pos-home.jpg"); /* Use your image file name */
+    background-image: url("Images/pos-home.jpg"); 
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Ensures it covers the viewport */
+    min-height: 100vh; /* Ensures it covers the viewport, vh stand te viewport*/
     width: 100%;
    padding: 2em;
   
@@ -263,3 +263,71 @@ FAqs*/
     text-align: center;
    
 }
+
+
+
+
+    /* For adapting to screen size */
+    @media (max-width: 600px) 
+    {
+        .contactt {
+            padding: 1em 1em 0em 1em;
+            font-size: 1em;
+        }
+        .main-content {
+            padding: 1em 0.5em 1em 0.5em;
+        }
+        .box {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        form {
+            width: 100%;
+        }
+        .form-control, textarea, input[type="text"], input[type="tel"] {
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+        button.btn {
+            width: 100%;
+            font-size: 1.1em;
+            padding: 0.7em;
+        }
+        label {
+            font-size: 1em;
+        }
+    
+
+
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 0.5em 0;
+        }
+        nav {
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            align-items: flex-start;
+            padding: 0.5em 1em;
+        }
+        nav a {
+            width: 100%;
+            padding: 0.7em 0.5em;
+            font-size: 1em;
+            border-radius: 0.3em;
+            margin: 0;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            font-size: 1em;
+            background: #222;
+            color: #fff;
+        }
+
+    }   
