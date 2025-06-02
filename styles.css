@@ -318,6 +318,27 @@ FAqs*/
             padding: 1em 0.5em 1em 0.5em;
         }
         
+        /* this product page*/
+        .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        margin: 0;
+        padding: 0.5em 0;
+        background: #fff;
+        border-radius: 1em;
+        }
+        .card {
+            width: 100vh;
+            max-width: 26em;
+            box-sizing: border-box;
+            margin-left: 0.5em ; 
+            padding: 1em 0.5em;
+        }
+
+        
+
         /*for the forms, so its Feedback */
       
         .form-control, textarea, input[type="text"], input[type="tel"] { /* For tageting elements, text box and tel also */
@@ -333,30 +354,7 @@ FAqs*/
             padding: 0.7em;
         }
        
-    
-            /*Products page */
 
-       
-        .main-bg {
-        padding: 1em 0.5em;
-        min-height: 100vh; /* making sure its fine on veiwport */
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        }
-        .text-postion {
-            margin: 0; /* it fixes small screen issue */
-            padding: 0.5em;
-            font-size: 1.1em;
-            color: #111;
-            font-family: 'Dancing Script', cursive;
-        }
-        h1, #h1 {
-            font-size: 1.2em;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            
-        }
 
         /*FAQs fixing */
         .accordion {
@@ -368,6 +366,28 @@ FAqs*/
        
     }
     
+    /* About us fixing 
+    additional code for it*/
+    .main-bg {
+        padding: 1em 0.5em;
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .text-postion {
+        margin: 0;
+        padding: 0.5em;
+        font-size: 1.1em;
+        color: #111;
+        font-family: 'Dancing Script', cursive;
+    }
+    h1, #h1 {
+        font-size: 1.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-left: 0;
+    }
 
 }
 
