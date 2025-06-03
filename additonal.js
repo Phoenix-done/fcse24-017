@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const message = document.getElementById('message').value.trim();
         const accept = document.getElementById('accept').checked;
 
+
+        // if loop for making sure all the fields are inputed with info
         if (!name || !email || !phone || !message) {
             alert('Please fill in all fields.');
             e.preventDefault();
